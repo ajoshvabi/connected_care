@@ -1,0 +1,296 @@
+<!-- leaverequestview -->
+<!-- <html>
+    <head>
+        <title>notification</title>
+    </head>
+    <body>
+        <table class="table table-striped table-hover">
+            <tr>
+                <th></th>
+               <th>Name</th> 
+               <th>Leave date</th>
+               <th>No of days</th>
+               <th>Description</th>
+
+            </tr>
+            <?php
+            foreach($view as $v)
+            {
+
+            ?>
+            <tr>
+                <td></td>
+               <td><?php echo $v->name?></td> 
+               <td><?php echo $v->myleave?></td> 
+               <td><?php echo $v->noday?></td> 
+               <td><?php echo $v->description?></td> 
+            </tr>
+            <?php
+            }
+            ?>
+        </table>
+    </body>
+</html> -->
+
+
+
+
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - GoSNippets</title>
+                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                <style>@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #EFF1F3;
+    min-height: 100vh;
+    position: relative;
+}
+
+.section-50 {
+    padding: 50px 0;
+}
+
+.m-b-50 {
+    margin-bottom: 50px;
+}
+
+.dark-link {
+    color: #333;
+}
+
+.heading-line {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.heading-line:after {
+    content: "";
+    height: 4px;
+    width: 75px;
+    background-color: #29B6F6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.notification-ui_dd-content {
+    margin-bottom: 30px;
+}
+
+.notification-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 7px;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.notification-list--unread {
+    border-left: 2px solid #29B6F6;
+}
+
+.notification-list .notification-list_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.notification-list .notification-list_content .notification-list_img img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.notification-list .notification-list_content .notification-list_detail p {
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.notification-list .notification-list_feature-img img {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    margin-left: 20px;
+}</style>
+                                <script type='text/javascript' src=''></script>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+                            </head>
+                            <body oncontextmenu='return false' class='snippet-body'>
+                           <!--  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header> -->
+
+<section class="section-50">
+    <div class="container">
+        <h3 class="m-b-50 heading-line">Leave requests </h3>
+       
+        <div class="notification-ui_dd-content">
+        <!-- <?php
+            foreach($view as $v)
+            {
+
+            ?>
+            <div class="notification-list notification-list--unread">
+                <div class="notification-list_content">
+                    <div class="notification-list_img">
+                        <img src="https://i.imgur.com/zYxDCQT.jpg" alt="user">
+                    </div>
+                    <div class="notification-list_detail">
+             
+                        <p><b>Notifications by admin</b> </p>
+                        <p class="text-muted"><?php echo $v->notification ?></p>
+                        <p class="text-muted"><small><?php echo $v->date ?></small></p>
+                     
+                    </div>
+                </div>
+                <div class="notification-list_feature-img">
+                    <img src="https://i.imgur.com/AbZqFnR.jpg" alt="Feature image">
+                </div>
+            </div>
+            <?php
+            }
+            ?> -->
+            <?php
+            foreach($view as $v)
+            {
+
+            ?>
+             <div class="notification-list notification-list--unread">
+                <div class="notification-list_content">
+                    <div class="notification-list_img">
+                        <img src="<?php echo base_url('upload/'. $v->photo);?>" alt="user">
+                    </div>
+                    <div class="notification-list_detail">
+                        <p><b><?php echo $v->name?></b> </p>
+                        <p class="text-muted"><?php echo $v->description?></p>
+                        <p class="text-muted"><small> <?php echo $v->noday?> from <?php echo $v->myleave?></small></p>
+                    </div>
+                </div>
+                <div class="notification-list_feature-img">
+                    <!-- <img src="https://i.imgur.com/AbZqFnR.jpg" alt="Feature image">
+                    <button>ko</button> -->
+                    <?php
+                    if($v->leavestatus==0)
+                    {
+                    ?>
+                    <a href="<?php echo base_url();?>Hospital/leaveapprove/<?php echo $v->lid?>" class='btn btn-primary'>Approve</a>
+                    <a href="<?php echo base_url();?>Hospital/leavereject/<?php echo $v->lid?>" class='btn btn-primary'>Reject</a>
+                    <?php
+                    }
+                    elseif($v->leavestatus==1)
+                    {
+                        ?>
+                        <a href="<?php echo base_url();?>Hospital/leavereject/<?php echo $v->lid?>" class='btn btn-primary'>Reject</a>
+                    <?php
+                    }
+                    elseif($v->leavestatus==2)
+                    {
+                        ?>
+                    <a href="<?php echo base_url();?>Hospital/leaveapprove/<?php echo $v->lid?>" class='btn btn-primary'>Approve</a>
+                        <?php
+                    }
+
+                    ?>
+
+                </div>
+            </div>
+            <?php
+            }
+            ?>
+            <!--
+            <div class="notification-list">
+                <div class="notification-list_content">
+                    <div class="notification-list_img">
+                        <img src="https://i.imgur.com/ltXdE4K.jpg" alt="user">
+                    </div>
+                    <div class="notification-list_detail">
+                        <p><b>Brian Cumin</b> reacted to your post</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
+                        <p class="text-muted"><small>10 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="notification-list_feature-img">
+                    <img src="https://i.imgur.com/bpBpAlH.jpg" alt="Feature image">
+                </div>
+            </div>
+            <div class="notification-list">
+                <div class="notification-list_content">
+                    <div class="notification-list_img">
+                        <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                    </div>
+                    <div class="notification-list_detail">
+                        <p><b>Lance Bogrol</b> reacted to your post</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
+                        <p class="text-muted"><small>10 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="notification-list_feature-img">
+                    <img src="https://i.imgur.com/iIhftMJ.jpg" alt="Feature image">
+                </div>
+            </div>
+            <div class="notification-list">
+                <div class="notification-list_content">
+                    <div class="notification-list_img">
+                        <img src="https://i.imgur.com/zYxDCQT.jpg" alt="user">
+                    </div>
+                    <div class="notification-list_detail">
+                        <p><b>Parsley Montana</b> reacted to your post</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
+                        <p class="text-muted"><small>10 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="notification-list_feature-img">
+                    <img src="https://i.imgur.com/bpBpAlH.jpg" alt="Feature image">
+                </div>
+            </div>
+        </div>
+ -->
+        <div class="text-center">
+            <!-- <a href="#!" class="dark-link">Load more activity</a> -->
+        </div>
+
+    </div>
+</section>
+                            <script type='text/javascript'></script>
+                            </body>
+                        </html>
